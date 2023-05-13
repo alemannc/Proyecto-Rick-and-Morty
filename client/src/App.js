@@ -43,7 +43,7 @@ function App () {
         .then((response) => response.json())
         .then((data) => {
           if (data.name) {
-            setCharacters((oldChars) => [...oldChars, data]);
+            setCharacters((oldChars) => [...oldChars, data])
           } else {
             window.alert('No hay personajes con ese ID');
           }
